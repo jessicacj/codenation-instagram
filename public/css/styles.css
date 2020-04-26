@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+html, body{
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header {
+  width: 100%;
+  border-bottom: 1.3px solid #e5e5e5;
+  background-color: #fff;
+}
+.header__content {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1.2em;
+ 
+}
+
+.header__logo {
+  width: 120px;
+  cursor: pointer;
+}
+.header__send {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.profile {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+}
+
+.profile__item {
+  width: 68px;
+  height:68px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 0.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profile__thumb__wrapper{
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile__item--thumb {
+background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+
+}
+.profile__item img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50px;
+}
+
+.card {
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 6px;
+  background: #fff;
+  border: 1.2px solid #e5e5e5;
+}
+
+.card__header {
+  padding: 0.5em;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__profile {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.card__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card__name {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 0.6em;
+}
+
+.card__settings {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.card__footer {
+  width: 100%;
+  height: 30px;
+ 
+}
+.card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #fff;
+ 
+}
+
+.card__user {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card__like {
+  margin-right: 1.3em;  
+}
+.card__like:hover {
+  color: #DE1738;
+  transition: color 0.2s;
+}
+
+.card__like, .card__comments, .card__save{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.card__footer2 {
+  
+  display: flex;
+  background:  #f2f2f2;
+  padding: 5px;
+
+  align-items: center;
+}
+
+.card__title {
+  font-size: 14px;
+  margin-left: 0.9em;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .header__content {
+    padding: 0;
+  }
+  .card ,.profile, .header__content{
+    max-width: 728px;
+    margin: 0px auto;
+  }
+
+  .profile {
+    margin-top: 20px;
+  }
+  .card {
+    margin: 50px auto;  
+    
+  }
+  .profile__item {
+    margin-left: 0px;
+  }
+}
+
+
+
+
+
+
